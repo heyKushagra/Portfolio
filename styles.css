@@ -82,6 +82,8 @@ html {
   text-size-adjust: 100%;
   scrollbar-width: thin;
   scrollbar-color: var(--text-dim) var(--bg-deep);
+  overflow-x: hidden;
+  width: 100%;
 }
 
 html::-webkit-scrollbar {
@@ -5379,6 +5381,12 @@ body.social-modal-open .custom-cursor-ring {
   }
 
   .modal-image-wrapper {
-    max-width: 95%;
+    max-width: 95% !important;
+    height: auto !important;
+    width: 90vw !important;
+    aspect-ratio: 16 / 9 !important;
+  }
+  #modal-main-image {
+    object-fit: contain !important;
   }
 }
